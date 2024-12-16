@@ -1,0 +1,95 @@
+/* Calendar Widget */
+.calendar-widget {
+  background-color:Blue; /* Soft light gray */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.calendar-widget:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.calendar-widget th {
+  font-weight: 500;
+  color: #333333; /* Darker gray for text */
+  font-size: 1rem;
+}
+
+.calendar-widget td {
+  text-align: center;
+  padding: 0.5rem;
+  color: purple; /* Slightly lighter gray */
+}
+
+.calendar-widget button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #28a745; /* Green */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.calendar-widget button:hover {
+  background-color: #218838; /* Darker green */
+  transform: scale(1.1);
+}
+
+.calendar-widget button:active {
+  background-color: #1e7e34; /* Even darker green */
+}
+
+/* Chart Container */
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 300px;
+}
+
+/* Card Component */
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Stats Icon */
+.stats-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6c757d; /* Gray for stats icon */
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .calendar-widget {
+      padding: 0.5rem;
+  }
+
+  .calendar-widget button {
+      width: 1.75rem;
+      height: 1.75rem;
+      font-size: 0.875rem;
+  }
+}

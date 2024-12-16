@@ -1,0 +1,13 @@
+/* src/Navbar.css */
+nav {
+  position: fixed;
+  top: 0;          
+  left: 0;         
+  right: 0;        
+  z-index: 50;     
+  background: linear-gradient(45deg, #6ee7b7, #3b82f6, #9333ea); /* Multicolor gradient */
+}
+
+body {
+  padding-top: 80px; 
+}

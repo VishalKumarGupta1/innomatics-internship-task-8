@@ -1,0 +1,114 @@
+.assignment-tracker {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.assignment-tracker:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+  text-align: center;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.assignment-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.input-field {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.input-field:focus {
+  background-color: #e7f3ff;
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.submit-button:active {
+  background-color: #004085;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+}
+
+.assignments-header {
+  margin-top: 20px;
+  color: #333;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.assignment-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.assignment-item {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.assignment-item:hover {
+  background-color: #f0f8ff;
+  transform: translateX(5px);
+}
+
+.assignment-item.completed {
+  background-color: #d4edda;
+  border-left: 5px solid #28a745;
+}
+
+.assignment-item.in-progress {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffc107;
+}
+
+.assignment-item.not-started {
+  background-color: #f8d7da;
+  border-left: 5px solid #dc3545;
+}
